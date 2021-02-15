@@ -1,0 +1,74 @@
+@import "../../styles/variables";
+
+.sidebar {
+  background-color: $primary-color-black;
+  height: 100vh;
+  color: $primary-color-white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  width: 15%;
+
+  &-child {
+    padding: 1rem;
+
+    &__image {
+      img {
+        width: 10vw;
+        height: auto;
+      }
+    }
+
+    &__icons {
+      div {
+        margin: 0.5rem;
+
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    &__playlist {
+      div {
+        margin: 0.5rem;
+
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    &__albums {
+      ul {
+        list-style-type: none;
+        overflow-y: scroll;
+        height: 510px;
+        &::-webkit-scrollbar {
+          width: 12px;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: #7a7a7a;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+          background-color: #999898;
+        }
+
+        li {
+          padding: 0.6rem 0;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.util {
+  padding-top: 1.5rem;
+}
+
+.icons {
+  font-size: 1.5rem;
+  vertical-align: text-bottom;
+}

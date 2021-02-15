@@ -1,0 +1,62 @@
+@import "../../styles/variables";
+.main {
+  width: 100%;
+  display: flex;
+  background-color: $primary-color-dark;
+  overflow: hidden;
+  max-height: 100%;
+
+  .side-child {
+    width: 15%;
+  }
+  &-child {
+    margin-left: 4rem;
+    width: 85%;
+    margin-top: 2rem;
+    h2 {
+      color: $primary-color-white;
+    }
+    &__username {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 2rem;
+      p {
+        color: $primary-color-white;
+      }
+    }
+
+    &__last {
+      display: flex;
+      flex-wrap: wrap;
+
+      .last-played {
+        background-color: $primary-color-dark;
+        margin: 1rem 1rem 1rem 0;
+        color: white;
+        border-radius: 5px;
+        padding: 1rem;
+        cursor: pointer;
+        box-shadow: 1px 5px 10px 2px #000000;
+        height: 270px;
+        width: 200px;
+
+        &__images {
+          text-align: center;
+          img {
+            border-radius: 50%;
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+          }
+        }
+
+        &__info {
+          .album-name {
+            font-size: 0.8rem;
+            padding: 1rem 0;
+          }
+        }
+      }
+    }
+  }
+}

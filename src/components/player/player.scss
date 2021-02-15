@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+
+.player {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $primary-color-dark;
+  height: 80px;
+
+  &-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__info {
+      display: flex;
+      align-items: center;
+
+      .artists-info {
+        padding-left: 1rem;
+        color: $primary-color-white;
+      }
+    }
+    .duration-info {
+      color: $primary-color-white;
+      margin-right: 1rem;
+    }
+
+    .start-or-resume {
+      button {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
